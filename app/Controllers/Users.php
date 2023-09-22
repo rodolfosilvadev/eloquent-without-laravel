@@ -6,8 +6,10 @@ use App\Models\User;
 
 class Users
 {
-    public function userCreate()
+    public function index(): object
     {
-        
+        $users = User::all();
+
+        return $users;
     }
 }
